@@ -146,7 +146,7 @@ end
 
 def play(board)
 input = gets
-  until over?(board) == true
+  until over?(board) == true do
 
     turn(board)
   end
