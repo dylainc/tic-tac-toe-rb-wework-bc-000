@@ -145,9 +145,9 @@ def winner(board)
 end
 
 def play(board)
-input = gets
-  until over?(board) == true do
 
+  until over?(board) == true do
+    input = gets
     turn(board)
   end
 
