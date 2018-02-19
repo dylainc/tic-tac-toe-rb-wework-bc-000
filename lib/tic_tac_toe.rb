@@ -145,5 +145,16 @@ def winner(board)
 end
 
 def play(board)
-  input = gets
+  until over?(board) == true
+    input = gets
+    turn(board)
+  end
+
+  if won?(board).is_a?(Array) == true
+    "Congratulations player #{winner(board)}"
+  elsif draw?(board) == true
+    "Cat's Game!"
+  end
+  
 end
+
