@@ -152,7 +152,7 @@ input = gets
   end
 
   if won?(board).is_a?(Array) == true
-    "Congratulations player #{winner(board)}"
+    "Congratulations #{winner(board)}!"
   elsif draw?(board) == true
     "Cat's Game!"
   end
